@@ -2,6 +2,7 @@
 
 
 class Komputer extends Elektronik implements kegunaan{
+	public $fungsi;
 	public function tegangan($yh){
 		return "Tegangan Yaitu $yh ";   //dari abstract
 	}
@@ -9,7 +10,7 @@ class Komputer extends Elektronik implements kegunaan{
 		return "Arus 78 MA";	//dari abstract
 	}
 	public function belajar(){
-		return "Digunakan untuk Belajar"; 	//dari interface
+		return " $this->fungsi"; 	//dari interface
 	}
 }
 ?>

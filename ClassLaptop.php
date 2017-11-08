@@ -1,11 +1,12 @@
 <?php
 
 class Laptop extends Elektronik implements kegunaan,milik{
+	public $ar;
 	public function tegangan($th){
 		return "Tegangan Yaitu $th "; //dari abstract
 	}
 	public function arus(){
-		return "Arus 80 MA";   //dari abstract
+		return "Arus $this->ar Ma";   //dari abstract
 	}
 
 	public function kepemilikan($cros){

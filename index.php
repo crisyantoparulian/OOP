@@ -6,23 +6,23 @@ require('ClassKomputer.php');
 require('ClassLaptop.php');
 
 
-$komp = new Komputer();
-echo $komp->tegangan(6);
+$komp = new Komputer();	 //buat objek komputer
+echo "Tegangan komputer = ".$komp->tegangan(6);	//dari abstract 
 echo "</br>";
-echo $komp->arus();
+echo "Arus komputer = ".$komp->arus();	//dari abstract 
 echo "</br>";
-echo $komp->belajar();
+echo "Fungsi komputer Untuk= ".$komp->belajar(); // dari implements
+echo "</br>";
 echo "</br>";
 
-
-$lap = new Laptop();
-echo $lap->tegangan(5);
+$lap = new Laptop();   //buat objek laptop
+echo "Tegangan Laptop = ".$lap->tegangan(5);	//dari abstract 
 echo "</br>";
-echo $lap->arus();
+echo "Arus Laptop = ".$lap->arus(); //dari abstract 
 echo "</br>";
-echo $lap->belajar();
+echo "Fungsi Laptop = ".$lap->belajar(); //dari implements
 echo "</br>";
-echo $lap->kepemilikan("Cris");
+echo "Laptop Ini Milik".$lap->kepemilikan("Cris"); //dari implements
 echo "</br>";
 
 ?>
